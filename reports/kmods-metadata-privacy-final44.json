@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "objects_scanned": 15,
+  "findings": [],
+  "reviewed_upstream_matches": [],
+  "reviewed_public_repository_matches": [],
+  "private_values_in_report": false
+}

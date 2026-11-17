@@ -1,12 +1,20 @@
 {
-  "date": "2026-11-17",
-  "state": "building",
-  "feed_ready": false,
-  "all_requested_kmods_compiled": false,
-  "requested_count": 1501,
-  "selected_count": 1116,
-  "unselected_count": 393,
+  "date": "2026-11-18",
+  "state": "signed_feed_verified",
+  "feed_ready": true,
+  "all_selected_kmods_compiled": true,
+  "all_requested_kmods_available": false,
+  "requested_count": 1512,
+  "selected_count": 1109,
+  "unselected_count": 403,
   "kernel": "6.18.60",
+  "kernel_abi": "6.18.60~b608e4c72ecf314fc3955d48ca497c9f-r1",
   "architecture": "aarch64_cortex-a53",
-  "packages_published": 0
+  "packages_published": 1110,
+  "kmod_packages": 1109,
+  "module_files": 1442,
+  "signatures_verified": true,
+  "feed_privacy_passed": true,
+  "hardware_verified": false,
+  "source_commit": "ada5e6641a2f10fd66dde3d47349dd9d043f3792"
 }

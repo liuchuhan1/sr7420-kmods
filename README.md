@@ -1,9 +1,14 @@
 # SR7420 kmod 软件源
 
-这是 SR7420 同内核构建的模块软件源仓库。**当前编译尚未完成，尚无可安装的软件包索引。**
+本仓库提供当前 SR7420 开发构建的 **1109 个 kmod APK、1 个 kernel APK 和签名索引**。已核对包签名、索引签名、AArch64 架构、vermagic 和全局模块依赖；尚未逐个做硬件或安装组合测试。
 
-软件包必须和 `sr7420-immortalwrt` 对应发行镜像来自同一次构建、同一 Linux 内核 ABI。不能用旧测试包替代全量构建，也不能忽略 APK 的 kernel 依赖强制安装。
+内核 ABI：`6.18.60~b608e4c72ecf314fc4035d48ca497c9f-r1`。架构：`aarch64_cortex-a53`。
 
-完成后按 `aarch64_cortex-a53/<kernel-ABI>/` 保存 APK、签名索引与 manifest；`keys/` 仅保存公钥。私钥不上传。
+只能用于来自同次内核配置、同一 ABI 的 SR7420 镜像，不能忽略 APK 的 kernel 依赖强制安装。USB44 实验镜像已经内置本仓库公钥和精确 ABI 软件源地址。
 
-模块选择/构建报告会区分：请求项、依赖求解后选中项、实际编译成功项、未选中项和内建符号。仓库存在不表示编译已经成功。
+- 软件包、`packages.adb` 与重签后 SHA256 清单：`aarch64_cortex-a53/6.18.60~b608e4c72ecf314fc4035d48ca497c9f-r1/`。
+- 公钥：`keys/public-key.pem`，私钥不在仓库中。
+- 功能与 403 个未选中项说明：[KMODS.md](KMODS.md)。
+- 构建和检查证据：`reports/`；对应固件源码提交见 `status.json`。
+
+`reports/all-kmods44-report.json` 中原始构建 APK 的哈希与重签后的 APK 不同，发布文件以同目录 `manifest.json` 为准。固件源码仓库同时提供全量选择、模块审计与软件源签名工具。

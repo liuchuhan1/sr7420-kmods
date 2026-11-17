@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "source_checks": [
+    {
+      "file": "drivers/net/ethernet/intel/e1000/e1000_main.c",
+      "sha256": "dfb1f607e7579057e5215f398c0f5ad7b00f6fa3fc29a67d4a14c32706fbc073",
+      "text_occurrences": 1,
+      "upstream_identical": true
+    },
+    {
+      "file": "drivers/net/ethernet/intel/ice/ice_ethtool_fdir.c",
+      "sha256": "74d7d15220310f4db759d49795190395a783e1a86d0d248a1976a15592f8920d",
+      "text_occurrences": 1,
+      "upstream_identical": true
+    }
+  ],
+  "public_binary_evidence": [
+    {
+      "file": "raid6_pq.ko",
+      "all_matches_within_generated_upstream_tables": true,
+      "matches": 3
+    },
+    {
+      "file": "mt7610e.bin",
+      "sha256": "538d08c08f8fb5aa05cacf34e49aeb307e8b2dc094407fc655fbf3580c893953",
+      "bytes": 80680,
+      "public_archive_hash_verified": true
+    },
+    {
+      "file": "mt7662.bin",
+      "sha256": "c1ae4cb3901289a346555f7a06c7749ca3f5a27348db0365996581f1b496a8c7",
+      "bytes": 81984,
+      "public_archive_hash_verified": true
+    }
+  ],
+  "reviewed_artifact_count": 5,
+  "private_values_in_report": false
+}
