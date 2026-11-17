@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-17",
+  "state": "building",
+  "feed_ready": false,
+  "all_requested_kmods_compiled": false,
+  "requested_count": 1501,
+  "selected_count": 1116,
+  "unselected_count": 393,
+  "kernel": "6.18.60",
+  "architecture": "aarch64_cortex-a53",
+  "packages_published": 0
+}
