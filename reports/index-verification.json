@@ -8,5 +8,7 @@
   "native_apk_version": "3.0.5",
   "native_signature_verification_passed": true,
   "trusted_key_matches_image": true,
-  "all_existing_package_and_index_bytes_preserved": true
+  "all_existing_package_and_index_bytes_preserved": true,
+  "isolated_native_apk_update_returncode": 0,
+  "isolated_native_available_packages": 1110
 }
